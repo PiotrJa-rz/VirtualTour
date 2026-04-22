@@ -1,0 +1,160 @@
+[gd_scene load_steps=23 format=3 uid="uid://duh3dphys1mfd"]
+
+[ext_resource type="Texture2D" uid="uid://bylwomyyvu5c" path="res://crossfit_gym_4k.exr" id="1_4nrh5"]
+[ext_resource type="Script" path="res://node_3d.gd" id="1_siv5u"]
+[ext_resource type="Script" path="res://Camera3D.gd" id="1_t2f12"]
+[ext_resource type="Script" path="res://XROrigin3D.gd" id="3_piry3"]
+[ext_resource type="Texture2D" uid="uid://dx67tpwy7bc1b" path="res://Gym-1.png" id="6_dkpmt"]
+[ext_resource type="Texture2D" uid="uid://b5clyu6btpa15" path="res://gym-2.png" id="7_1ai5s"]
+[ext_resource type="Script" path="res://LeftHand.gd" id="7_oi62h"]
+[ext_resource type="Script" path="res://Area3D.gd" id="7_qia0l"]
+[ext_resource type="Texture2D" uid="uid://dlgu570g8j7wi" path="res://gym-3.png" id="8_cjvdd"]
+[ext_resource type="Texture2D" uid="uid://dslgnuywhvlgg" path="res://gym-4.png" id="9_praru"]
+[ext_resource type="Texture2D" uid="uid://xbyntugu0yvh" path="res://gym-5.png" id="10_t6024"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_fkpo3"]
+flip_faces = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nxajr"]
+cull_mode = 2
+shading_mode = 0
+albedo_texture = ExtResource("1_4nrh5")
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_pwjck"]
+top_radius = 0.01
+bottom_radius = 0.01
+height = 10.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kmc0l"]
+shading_mode = 0
+albedo_color = Color(1, 0.117647, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_glnfy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mbaj6"]
+shading_mode = 0
+albedo_texture = ExtResource("6_dkpmt")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fge5p"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oeuoy"]
+shading_mode = 0
+albedo_texture = ExtResource("7_1ai5s")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wnqnj"]
+shading_mode = 0
+albedo_texture = ExtResource("8_cjvdd")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0uso8"]
+shading_mode = 0
+albedo_texture = ExtResource("9_praru")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b5o3a"]
+shading_mode = 0
+albedo_texture = ExtResource("10_t6024")
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.379291)
+script = ExtResource("1_siv5u")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
+mesh = SubResource("SphereMesh_fkpo3")
+skeleton = NodePath("../XROrigin3D/Camera3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_nxajr")
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.9046)
+script = ExtResource("3_piry3")
+
+[node name="Camera3D" type="XRCamera3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.702776, 0.473349, -3.93764)
+script = ExtResource("1_t2f12")
+
+[node name="LeftHand" type="XRController3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.62144, 0.417701, -4.98531)
+tracker = &"left_hand"
+script = ExtResource("7_oi62h")
+
+[node name="RayCast3D" type="RayCast3D" parent="XROrigin3D/LeftHand"]
+target_position = Vector3(0, 0, -10)
+collide_with_areas = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="XROrigin3D/LeftHand"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -5)
+mesh = SubResource("CylinderMesh_pwjck")
+surface_material_override/0 = SubResource("StandardMaterial3D_kmc0l")
+
+[node name="RightHand" type="XRController3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.58288)
+tracker = &"right_hand"
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.259808, 0.15, 0, -0.15, 0.259808, -1.26716, -1, -6)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.60849, 0, -2.79432)
+mesh = SubResource("PlaneMesh_glnfy")
+surface_material_override/0 = SubResource("StandardMaterial3D_mbaj6")
+
+[node name="Area3D1" type="Area3D" parent="Node3D/MeshInstance3D"]
+script = ExtResource("7_qia0l")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/MeshInstance3D/Area3D1"]
+shape = SubResource("BoxShape3D_fge5p")
+
+[node name="Node3D2" type="Node3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.259808, 0.15, 0, -0.15, 0.259808, -0.834344, -1, -6)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Node3D2"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -2.79432)
+mesh = SubResource("PlaneMesh_glnfy")
+surface_material_override/0 = SubResource("StandardMaterial3D_oeuoy")
+
+[node name="Area3D2" type="Area3D" parent="Node3D2/MeshInstance3D2"]
+script = ExtResource("7_qia0l")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D2/MeshInstance3D2/Area3D2"]
+shape = SubResource("BoxShape3D_fge5p")
+
+[node name="Node3D3" type="Node3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.259808, 0.15, 0, -0.15, 0.259808, -0.219725, -1, -6)
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Node3D3"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -2.79432)
+mesh = SubResource("PlaneMesh_glnfy")
+surface_material_override/0 = SubResource("StandardMaterial3D_wnqnj")
+
+[node name="Area3D3" type="Area3D" parent="Node3D3/MeshInstance3D3"]
+script = ExtResource("7_qia0l")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D3/MeshInstance3D3/Area3D3"]
+shape = SubResource("BoxShape3D_fge5p")
+
+[node name="Node3D4" type="Node3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.259808, 0.15, 0, -0.15, 0.259808, 0.390569, -1, -6)
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Node3D4"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -2.79432)
+mesh = SubResource("PlaneMesh_glnfy")
+surface_material_override/0 = SubResource("StandardMaterial3D_0uso8")
+
+[node name="Area3D4" type="Area3D" parent="Node3D4/MeshInstance3D4"]
+script = ExtResource("7_qia0l")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D4/MeshInstance3D4/Area3D4"]
+shape = SubResource("BoxShape3D_fge5p")
+
+[node name="Node3D5" type="Node3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.259808, 0.15, 0, -0.15, 0.259808, 1, -1, -6)
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Node3D5"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -2.79432)
+mesh = SubResource("PlaneMesh_glnfy")
+surface_material_override/0 = SubResource("StandardMaterial3D_b5o3a")
+
+[node name="Area3D5" type="Area3D" parent="Node3D5/MeshInstance3D5"]
+script = ExtResource("7_qia0l")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D5/MeshInstance3D5/Area3D5"]
+shape = SubResource("BoxShape3D_fge5p")
