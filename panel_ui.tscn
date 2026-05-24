@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://bj3xjluq0u6l1"]
+
+[ext_resource type="Texture2D" uid="uid://47unhv4ad4ah" path="res://ui/svgviewer-output (2).svg" id="1_l1e07"]
+[ext_resource type="Texture2D" uid="uid://dkcbq614sj0xm" path="res://ui/ChatGPT Image 23 maj 2026, 14_28_36.png" id="2_3c45w"]
+[ext_resource type="Texture2D" uid="uid://d2n8vl1e3a4xf" path="res://ui/svgviewer-output (8).svg" id="2_jmel1"]
+[ext_resource type="Texture2D" uid="uid://dbriawv33wpxl" path="res://ui/svgviewer-output.svg" id="3_bar53"]
+[ext_resource type="Texture2D" uid="uid://b6meppss82txm" path="res://ui/Liter i .png" id="3_jmel1"]
+[ext_resource type="Texture2D" uid="uid://cyy5c3wbpcftf" path="res://ui/bbutton.png" id="5_irqnv"]
+[ext_resource type="Texture2D" uid="uid://cg5umlbt74dtn" path="res://ui/menu-simple.png" id="7_7qlb2"]
+
+[node name="Control" type="Control" unique_id=1507523084]
+custom_minimum_size = Vector2(1000, 1000)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2077556336]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=1405718602]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer/HBoxContainer" unique_id=705077906]
+layout_mode = 2
+texture_normal = ExtResource("1_l1e07")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/HBoxContainer/TextureButton" unique_id=1401854427]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 118.0
+offset_right = 116.0
+offset_bottom = 172.0
+texture = ExtResource("2_3c45w")
+expand_mode = 1
+
+[node name="TextureButton2" type="TextureButton" parent="CanvasLayer/HBoxContainer" unique_id=1404417045]
+layout_mode = 2
+texture_normal = ExtResource("2_jmel1")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/HBoxContainer/TextureButton2" unique_id=318726646]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.102000006
+anchor_bottom = 0.102000006
+offset_left = 54.0
+offset_top = 53.0
+offset_right = 103.007996
+offset_bottom = 102.007996
+texture = ExtResource("3_jmel1")
+expand_mode = 4
+stretch_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/HBoxContainer/TextureButton2" unique_id=1685299400]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 118.0
+offset_right = 116.0
+offset_bottom = 172.0
+texture = ExtResource("5_irqnv")
+expand_mode = 1
+
+[node name="TextureButton3" type="TextureButton" parent="CanvasLayer/HBoxContainer" unique_id=1721975184]
+layout_mode = 2
+texture_normal = ExtResource("3_bar53")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/HBoxContainer/TextureButton3" unique_id=356940873]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 118.0
+offset_right = 116.0
+offset_bottom = 172.0
+texture = ExtResource("7_7qlb2")
+expand_mode = 1

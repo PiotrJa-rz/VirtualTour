@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://derb5mlf8iwg8"]
+
+[ext_resource type="Script" uid="uid://beg2fkrh2g40u" path="res://galeria_owalna_3.gd" id="1_10cxg"]
+[ext_resource type="Texture2D" uid="uid://br8xyqyusewfq" path="res://zdjecia-360-z-podzialem/Galeria_Owalna/CAM_20260428121402_0006_D_CAME.JPG" id="2_0ycy4"]
+[ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_10cxg"]
+[ext_resource type="PackedScene" uid="uid://bgbkg5ebenasg" path="res://hotspot_poprzednia_panorama.tscn" id="3_0ycy4"]
+[ext_resource type="PackedScene" uid="uid://80ctavq7wsxk" path="res://hotspot_drzwi.tscn" id="5_0ycy4"]
+[ext_resource type="PackedScene" uid="uid://cehq7gdsyhubj" path="res://hotspot-krotki.tscn" id="6_dpq88"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_mndi8"]
+flip_faces = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o31fp"]
+cull_mode = 2
+shading_mode = 0
+albedo_texture = ExtResource("2_0ycy4")
+
+[node name="Node3D" type="Node3D" unique_id=587268147]
+script = ExtResource("1_10cxg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1190714604]
+transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
+mesh = SubResource("SphereMesh_mndi8")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_o31fp")
+
+[node name="XROrigin3D" parent="." unique_id=1211673775 instance=ExtResource("2_10cxg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.7840233)
+
+[node name="hotspot-poprzednia-panorama" parent="." unique_id=872797964 instance=ExtResource("3_0ycy4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.6346462)
+
+[node name="Node3D" parent="." unique_id=1487015696 instance=ExtResource("5_0ycy4")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.7147808, 0.3389371, -4.421915)
+
+[node name="dawid" parent="." unique_id=1825903305 instance=ExtResource("6_dpq88")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8399786, -9.3406105)
+
+[node name="eufrat" parent="." unique_id=1683390261 instance=ExtResource("6_dpq88")]
+transform = Transform3D(0.21060827, 0, 0.97757053, 0, 1, 0, -0.97757053, 0, 0.21060827, -2.6913087, 0.8251941, -6.76309)
+
+[node name="astiages" parent="." unique_id=1064934503 instance=ExtResource("6_dpq88")]
+transform = Transform3D(-0.1377557, 0, 0.99046624, 0, 1, 0, -0.99046624, 0, -0.1377557, -2.6913087, 0.8251941, -2.0486462)

@@ -8,12 +8,12 @@ var rotation_y = 0.0
 var rotating = false
 
 func _input(event):
-    # klik = zaczynamy / kończymy obrót
+	# klik = zaczynamy / kończymy obrót
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			rotating = event.pressed
 
-    # ruch myszy działa tylko gdy trzymasz klik
+	# ruch myszy działa tylko gdy trzymasz klik
 	if event is InputEventMouseMotion and rotating:
 		rotation_y -= event.relative.x * sensitivity
 		rotation_x -= event.relative.y * sensitivity

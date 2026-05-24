@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dyfj6ynue5el3"]
+
+[ext_resource type="Texture2D" uid="uid://b6q0uvjd3fmrm" path="res://zdjecia-360-z-podzialem/sala_rady/CAM_20260504090545_0004_D_CAME.JPG" id="1_tkkq8"]
+[ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_xh252"]
+[ext_resource type="PackedScene" uid="uid://bgbkg5ebenasg" path="res://hotspot_poprzednia_panorama.tscn" id="3_6hf8a"]
+[ext_resource type="PackedScene" uid="uid://80ctavq7wsxk" path="res://hotspot_drzwi.tscn" id="4_xh252"]
+[ext_resource type="PackedScene" uid="uid://cehq7gdsyhubj" path="res://hotspot-krotki.tscn" id="5_qiv8e"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_mndi8"]
+flip_faces = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o31fp"]
+cull_mode = 2
+shading_mode = 0
+albedo_texture = ExtResource("1_tkkq8")
+
+[node name="Node3D" type="Node3D" unique_id=980864621]
+
+[node name="Node3D2" parent="." unique_id=2085301210 instance=ExtResource("4_xh252")]
+transform = Transform3D(-0.044386625, 0, -0.99901444, 0, 1, 0, 0.99901444, 0, -0.044386625, 3.5345376, 0.8242166, -3.1619768)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=441551902]
+transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
+mesh = SubResource("SphereMesh_mndi8")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_o31fp")
+
+[node name="XROrigin3D" parent="." unique_id=1211673775 instance=ExtResource("2_xh252")]
+
+[node name="Area3D" parent="." unique_id=872797964 instance=ExtResource("3_6hf8a")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.8455439, 0, -2.9610457)
+
+[node name="Node3D" parent="." unique_id=1487015696 instance=ExtResource("4_xh252")]
+transform = Transform3D(0.4450416, 0, -0.8955099, 0, 1, 0, 0.8955099, 0, 0.4450416, 3.0223663, 0.7670878, -7.4290533)
+
+[node name="tron" parent="." unique_id=1825903305 instance=ExtResource("5_qiv8e")]
+transform = Transform3D(0.5686767, 0, -0.82256114, 0, 1, 0, 0.82256114, 0, 0.5686767, 3.1958802, 0, -5.2687197)

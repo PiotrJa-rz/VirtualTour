@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://fve1e33k2te0"]
+
+[ext_resource type="Script" uid="uid://c3vmffo3pscpk" path="res://XROrigin3D.gd" id="1_hkceo"]
+[ext_resource type="Script" uid="uid://dgsti800h35le" path="res://Camera3D.gd" id="2_kkggl"]
+[ext_resource type="Script" uid="uid://tkouj43i653c" path="res://left_hand_vr.gd" id="3_hkceo"]
+[ext_resource type="PackedScene" uid="uid://bvy3jxlidwpep" path="res://panel_ui_vr.tscn" id="3_kkggl"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_pwjck"]
+top_radius = 0.01
+bottom_radius = 0.01
+height = 10.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kmc0l"]
+shading_mode = 0
+albedo_color = Color(0.94011176, 0.98920435, 0.9989689, 1)
+
+[node name="XROrigin3D" type="XROrigin3D" unique_id=1211673775]
+script = ExtResource("1_hkceo")
+
+[node name="Camera3D" type="XRCamera3D" parent="." unique_id=999361919]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.702776, 0.473349, -3.93764)
+script = ExtResource("2_kkggl")
+
+[node name="Node3D" parent="Camera3D" unique_id=995837932 instance=ExtResource("3_kkggl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.1859329)
+
+[node name="LeftHand" type="XRController3D" parent="." unique_id=35754765]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.62144, 0.417701, -4.98531)
+tracker = &"left_hand"
+script = ExtResource("3_hkceo")
+
+[node name="RayCast3D" type="RayCast3D" parent="LeftHand" unique_id=144347732]
+exclude_parent = false
+target_position = Vector3(0, 0, -30)
+collide_with_areas = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LeftHand" unique_id=2022059650]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -5)
+mesh = SubResource("CylinderMesh_pwjck")
+surface_material_override/0 = SubResource("StandardMaterial3D_kmc0l")
+
+[node name="RightHand" type="XRController3D" parent="." unique_id=448817221]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.58288)
+tracker = &"right_hand"
+
+[node name="RayCast3D" type="RayCast3D" parent="RightHand" unique_id=939069613]
+exclude_parent = false
+target_position = Vector3(0, 0, -100)
+collide_with_areas = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RightHand" unique_id=1162601056]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -5)
+mesh = SubResource("CylinderMesh_pwjck")
+surface_material_override/0 = SubResource("StandardMaterial3D_kmc0l")

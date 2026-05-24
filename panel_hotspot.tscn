@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://d0tk32pmado4k"]
+
+[ext_resource type="Script" uid="uid://bt3lxj15wh4m6" path="res://panel_hotspot.gd" id="1_72r61"]
+[ext_resource type="PackedScene" uid="uid://duje4k6oiqrf1" path="res://hotspot-obrazy.tscn" id="1_oib7n"]
+[ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_8ev80"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_vuck4"]
+viewport_path = NodePath("Sprite3D/SubViewport")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_72r61"]
+
+[node name="Node3D" type="Node3D" unique_id=34709824]
+script = ExtResource("1_72r61")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=202400446]
+texture = SubResource("ViewportTexture_vuck4")
+
+[node name="SubViewport" type="SubViewport" parent="Sprite3D" unique_id=832860498]
+size = Vector2i(800, 1000)
+
+[node name="Control" parent="Sprite3D/SubViewport" unique_id=1783105576 instance=ExtResource("1_oib7n")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -500.0
+offset_right = 400.0
+offset_bottom = 500.0
+
+[node name="XROrigin3D" parent="." unique_id=1211673775 instance=ExtResource("2_8ev80")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9.020715)
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1370655027]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4720669, 4.529084, 0)
+metadata/back = ""
+
+[node name="CollisionShape2D" type="CollisionShape3D" parent="Area3D" unique_id=1186288366]
+shape = SubResource("BoxShape3D_72r61")
+metadata/back = ""

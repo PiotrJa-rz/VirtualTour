@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://80ctavq7wsxk"]
+
+[ext_resource type="Texture2D" uid="uid://dtpoa877e0xtv" path="res://ui/svgviewer-output (14).svg" id="1_f6x5c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p4tbh"]
+
+[node name="Node3D" type="Area3D" unique_id=1487015696]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1591528732]
+shape = SubResource("BoxShape3D_p4tbh")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=288698555]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+texture = ExtResource("1_f6x5c")

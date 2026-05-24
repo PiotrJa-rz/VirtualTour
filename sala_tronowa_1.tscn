@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bqaccfk6xyksk"]
+
+[ext_resource type="Texture2D" uid="uid://ch27fpmlbyr5d" path="res://zdjecia-360-z-podzialem/sala_tronowa_6/CAM_20260504092028_0010_D_CAME.JPG" id="1_dsep4"]
+[ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_7atgh"]
+[ext_resource type="PackedScene" uid="uid://bgbkg5ebenasg" path="res://hotspot_poprzednia_panorama.tscn" id="3_fb2tw"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_mndi8"]
+flip_faces = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o31fp"]
+cull_mode = 2
+shading_mode = 0
+albedo_texture = ExtResource("1_dsep4")
+
+[node name="Node3D" type="Node3D" unique_id=1151469852]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=701068379]
+transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
+mesh = SubResource("SphereMesh_mndi8")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_o31fp")
+
+[node name="XROrigin3D" parent="." unique_id=1211673775 instance=ExtResource("2_7atgh")]
+
+[node name="Area3D" parent="." unique_id=872797964 instance=ExtResource("3_fb2tw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.9610457)

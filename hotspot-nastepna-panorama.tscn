@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://boogrfo6lnpog"]
+
+[ext_resource type="Texture2D" uid="uid://do8ih6b58anid" path="res://ui/svgviewer-output (3).svg" id="1_3ysno"]
+[ext_resource type="Script" uid="uid://drxdu5yyrh6uo" path="res://hotspot_nastepna_panorama.gd" id="1_54sdj"]
+[ext_resource type="Script" uid="uid://dvyon5ws0n7aj" path="res://collision_shape_3d.gd" id="2_wh3tn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_54sdj"]
+
+[node name="Area3D" type="Area3D" unique_id=1309105473]
+script = ExtResource("1_54sdj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1996979205]
+shape = SubResource("BoxShape3D_54sdj")
+script = ExtResource("2_wh3tn")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1567720101]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+texture = ExtResource("1_3ysno")

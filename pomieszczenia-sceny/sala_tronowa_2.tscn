@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://doeauen8qksp6"]
+
+[ext_resource type="Texture2D" uid="uid://y3lu023ryri8" path="res://zdjecia-360-z-podzialem/sala_tronowa_6/CAM_20260504092148_0012_D_CAME.JPG" id="1_eooyd"]
+[ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_eooyd"]
+[ext_resource type="PackedScene" uid="uid://bgbkg5ebenasg" path="res://hotspot_poprzednia_panorama.tscn" id="3_jljbm"]
+[ext_resource type="PackedScene" uid="uid://boogrfo6lnpog" path="res://hotspot-nastepna-panorama.tscn" id="4_2aamp"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_eooyd"]
+flip_faces = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jljbm"]
+cull_mode = 2
+shading_mode = 0
+albedo_texture = ExtResource("1_eooyd")
+
+[node name="Node3D" type="Node3D" unique_id=1905017169]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=25789266]
+transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
+mesh = SubResource("SphereMesh_eooyd")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_jljbm")
+
+[node name="XROrigin3D" parent="." unique_id=1211673775 instance=ExtResource("2_eooyd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="Area3D" parent="." unique_id=872797964 instance=ExtResource("3_jljbm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.124686, 0, -1.8357158)
+
+[node name="Area3D2" parent="." unique_id=1309105473 instance=ExtResource("4_2aamp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2400875, 0, -6)

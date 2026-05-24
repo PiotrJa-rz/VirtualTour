@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dwemejpyaw60k"]
+
+[ext_resource type="Texture2D" uid="uid://ipnimynjn0vf" path="res://zdjecia-360-z-podzialem/Przedpokoj_sali_wielkiej/CAM_20260428122918_0008_D_CAME.JPG" id="1_e43uu"]
+[ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_fims0"]
+[ext_resource type="PackedScene" uid="uid://boogrfo6lnpog" path="res://hotspot-nastepna-panorama.tscn" id="4_gfqy3"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_fims0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fims0"]
+cull_mode = 2
+shading_mode = 0
+albedo_texture = ExtResource("1_e43uu")
+
+[node name="Node3D" type="Node3D" unique_id=1049732263]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1093682261]
+transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
+mesh = SubResource("SphereMesh_fims0")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_fims0")
+
+[node name="XROrigin3D" parent="." unique_id=1211673775 instance=ExtResource("2_fims0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="Area3D2" parent="." unique_id=1309105473 instance=ExtResource("4_gfqy3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.027189195, 0.5, -1.0567788)
