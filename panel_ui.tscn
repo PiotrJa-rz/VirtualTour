@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bj3xjluq0u6l1"]
 
 [ext_resource type="Texture2D" uid="uid://47unhv4ad4ah" path="res://ui/svgviewer-output (2).svg" id="1_l1e07"]
-[ext_resource type="Texture2D" uid="uid://dkcbq614sj0xm" path="res://ui/ChatGPT Image 23 maj 2026, 14_28_36.png" id="2_3c45w"]
+[ext_resource type="Texture2D" uid="uid://dkcbq614sj0xm" path="res://ui/ikona-a.png" id="2_3c45w"]
 [ext_resource type="Texture2D" uid="uid://d2n8vl1e3a4xf" path="res://ui/svgviewer-output (8).svg" id="2_jmel1"]
 [ext_resource type="Texture2D" uid="uid://dbriawv33wpxl" path="res://ui/svgviewer-output.svg" id="3_bar53"]
 [ext_resource type="Texture2D" uid="uid://b6meppss82txm" path="res://ui/Liter i .png" id="3_jmel1"]
