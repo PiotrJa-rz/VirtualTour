@@ -1,13 +1,10 @@
 [gd_scene format=3 uid="uid://d1nmxnps2solo"]
 
-[ext_resource type="Texture2D" uid="uid://dq2rwxeqincs0" path="res://zdjecia-360-z-podzialem/sala_rycerska_5/CAM_20260504091730_0007_D_CAME.JPG" id="1_fvdb1"]
 [ext_resource type="Texture2D" uid="uid://ccvnuah6ti6wq" path="res://zdjecia-360-z-podzialem/sala_rycerska_5/CAM_20260504091718_0006_D_CAME.JPG" id="2_b47hb"]
 [ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_fvdb1"]
 [ext_resource type="PackedScene" uid="uid://boogrfo6lnpog" path="res://hotspot-nastepna-panorama.tscn" id="4_gy0fu"]
+[ext_resource type="PackedScene" uid="uid://cehq7gdsyhubj" path="res://hotspot-krotki.tscn" id="5_b47hb"]
 [ext_resource type="PackedScene" uid="uid://80ctavq7wsxk" path="res://hotspot_drzwi.tscn" id="5_fvdb1"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gy0fu"]
-albedo_texture = ExtResource("1_fvdb1")
 
 [sub_resource type="SphereMesh" id="SphereMesh_xrtju"]
 flip_faces = true
@@ -21,7 +18,6 @@ albedo_texture = ExtResource("2_b47hb")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1509641939]
 transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
-material_override = SubResource("StandardMaterial3D_gy0fu")
 mesh = SubResource("SphereMesh_xrtju")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_h2a4c")
@@ -34,3 +30,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.012, 0.5, -1.469)
 
 [node name="Node3D" parent="." unique_id=1487015696 instance=ExtResource("5_fvdb1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.795, 0.9492481, -9.207367)
+
+[node name="wieden" parent="." unique_id=1825903305 instance=ExtResource("5_b47hb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9989933, 0.6761466, -9.063618)
+metadata/eksponat = ""
+
+[node name="chocim" parent="." unique_id=1507983098 instance=ExtResource("5_b47hb")]
+transform = Transform3D(0.28948292, 0, -0.9571832, 0, 1, 0, 0.9571832, 0, 0.28948292, -3.4824464, 0.6461567, -6.6048956)
+metadata/eksponat = ""
+
+[node name="unia" parent="." unique_id=596298348 instance=ExtResource("5_b47hb")]
+transform = Transform3D(0.250211, 0, -0.9681913, 0, 1, 0, 0.9681913, 0, 0.250211, -3.453536, 0.4429134, -2.0272756)
+metadata/eksponat = ""

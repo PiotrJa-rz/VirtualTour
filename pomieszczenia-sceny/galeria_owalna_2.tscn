@@ -42,3 +42,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0047421455, 0, -6)
 
 [node name="wielki" parent="." unique_id=1825903305 instance=ExtResource("6_rn3k5")]
 transform = Transform3D(0.07219383, 0, -0.9973908, 0, 1, 0, 0.9973908, 0, 0.07219383, -3.1163692, 0.33572757, -2.47716)
+metadata/eksponat = ""

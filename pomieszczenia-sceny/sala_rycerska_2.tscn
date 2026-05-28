@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bgbkg5ebenasg" path="res://hotspot_poprzednia_panorama.tscn" id="3_bx8vw"]
 [ext_resource type="PackedScene" uid="uid://boogrfo6lnpog" path="res://hotspot-nastepna-panorama.tscn" id="4_36dhe"]
 [ext_resource type="PackedScene" uid="uid://80ctavq7wsxk" path="res://hotspot_drzwi.tscn" id="5_8mpqr"]
+[ext_resource type="PackedScene" uid="uid://cehq7gdsyhubj" path="res://hotspot-krotki.tscn" id="6_bx8vw"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_xrtju"]
 flip_faces = true
@@ -36,3 +37,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2400875, 0, -6)
 
 [node name="Node3D" parent="." unique_id=1775352796 instance=ExtResource("5_8mpqr")]
 transform = Transform3D(-0.5635261, 0, 0.82609826, 0, 1, 0, -0.82609826, 0, -0.5635261, -2.089, 0.5, -0.913)
+
+[node name="hołd" parent="." unique_id=1825903305 instance=ExtResource("6_bx8vw")]
+transform = Transform3D(0.54810345, 0, -0.8364105, 0, 1, 0, 0.8364105, 0, 0.54810345, -3.6719525, 0.44806975, -2.6915586)
+metadata/eksponat = ""
+
+[node name="akademia" parent="." unique_id=1546363450 instance=ExtResource("6_bx8vw")]
+transform = Transform3D(0.54810345, 0, -0.8364105, 0, 1, 0, 0.8364105, 0, 0.54810345, -1.0015955, 0.51531434, 0.23985696)
+metadata/eksponat = ""
+
+[node name="kazimierz" parent="." unique_id=1805832331 instance=ExtResource("6_bx8vw")]
+transform = Transform3D(-0.6853736, 0, -0.72819155, 0, 1, 0, 0.72819155, 0, -0.6853736, 2.2397242, 0.44806975, -0.4536755)
+metadata/eksponat = ""
+
+[node name="chronos" parent="." unique_id=207326675 instance=ExtResource("6_bx8vw")]
+transform = Transform3D(0.54810345, 0, -0.8364105, 0, 1, 0, 0.8364105, 0, 0.54810345, -3.9138312, 0.7068381, -4.8277845)
+metadata/eksponat = ""
+
+[node name="sława" parent="." unique_id=1634493302 instance=ExtResource("6_bx8vw")]
+transform = Transform3D(0.54810345, 0, -0.8364105, 0, 1, 0, 0.8364105, 0, 0.54810345, 0.96937037, 0.6960251, -9.201665)
+metadata/eksponat = ""

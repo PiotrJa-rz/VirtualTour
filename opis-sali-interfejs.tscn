@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://bd8w22ebv11a2"]
+
+[ext_resource type="Texture2D" uid="uid://dkfc7531me8kp" path="res://ui/svgviewer-output (15).svg" id="2_7djxh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qq03i"]
+bg_color = Color(0.99116415, 0.99116427, 0.99116415, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+
+[sub_resource type="Theme" id="Theme_jogs2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vwd1r"]
+font_size = 22
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cl24u"]
+bg_color = Color(0.8346142, 0.83461434, 0.8346141, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_color = Color(0.0018410675, 0.0018410688, 0.0018410651, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+
+[node name="Control" type="Control" unique_id=1812620486]
+custom_minimum_size = Vector2(800, 1000)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -176.0
+offset_right = -352.0
+offset_bottom = 176.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer2" type="Panel" parent="." unique_id=1110619281]
+custom_minimum_size = Vector2(700, 850)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 850.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_qq03i")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=184064966]
+custom_minimum_size = Vector2(600, 725)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -362.5
+offset_right = 300.0
+offset_bottom = 362.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_jogs2")
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1488662453]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Rzeźba Marka Aureliusza"
+label_settings = SubResource("LabelSettings_vwd1r")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer" unique_id=1095965830]
+custom_minimum_size = Vector2(0, 125)
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Rzęźba przedstawia znanego na całym świecie Marka Aureliusza, który kochał co robił i był dla wielu inspiracją"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="." unique_id=1074484931]
+custom_minimum_size = Vector2(800, 50)
+layout_mode = 0
+offset_right = 800.0
+offset_bottom = 50.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_cl24u")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1972249294]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -100.0
+offset_bottom = 60.0
+grow_horizontal = 0
+texture_normal = ExtResource("2_7djxh")
+stretch_mode = 3
+metadata/back = ""

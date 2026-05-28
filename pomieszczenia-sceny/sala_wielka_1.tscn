@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_74jtl"]
 [ext_resource type="PackedScene" uid="uid://bgbkg5ebenasg" path="res://hotspot_poprzednia_panorama.tscn" id="3_yyirx"]
 [ext_resource type="PackedScene" uid="uid://80ctavq7wsxk" path="res://hotspot_drzwi.tscn" id="4_74jtl"]
+[ext_resource type="PackedScene" uid="uid://cehq7gdsyhubj" path="res://hotspot-krotki.tscn" id="5_3qfhh"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_mndi8"]
 flip_faces = true
@@ -28,3 +29,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.0818775)
 
 [node name="Node3D" parent="." unique_id=1487015696 instance=ExtResource("4_74jtl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45583224, 0.618631, -9.079707)
+
+[node name="kandelabr" parent="." unique_id=1825903305 instance=ExtResource("5_3qfhh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75635475, 0.61602294, -9.266342)
+metadata/eksponat = ""
+
+[node name="chaos" parent="." unique_id=1976774159 instance=ExtResource("5_3qfhh")]
+transform = Transform3D(1, 0, 0, 0, 0.31132334, 0.95030403, 0, -0.95030403, 0.31132334, 0, 3.9779546, -3.0064256)
+metadata/eksponat = ""

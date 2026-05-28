@@ -3,11 +3,20 @@
 [ext_resource type="Script" uid="uid://bt3lxj15wh4m6" path="res://panel_hotspot.gd" id="1_72r61"]
 [ext_resource type="PackedScene" uid="uid://duje4k6oiqrf1" path="res://hotspot-obrazy.tscn" id="1_oib7n"]
 [ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_8ev80"]
+[ext_resource type="Texture2D" uid="uid://c5o8n0ose8kik" path="res://zdjecia-360-z-podzialem/Galeria_Owalna/CAM_20260428120911_0002_D_CAME.JPG" id="4_c5ji6"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_vuck4"]
 viewport_path = NodePath("Sprite3D/SubViewport")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_72r61"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_8sxjr"]
+flip_faces = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_txhr0"]
+specular_mode = 1
+albedo_texture = ExtResource("4_c5ji6")
+albedo_texture_force_srgb = true
 
 [node name="Node3D" type="Node3D" unique_id=34709824]
 script = ExtResource("1_72r61")
@@ -39,3 +48,9 @@ metadata/back = ""
 [node name="CollisionShape2D" type="CollisionShape3D" parent="Area3D" unique_id=1186288366]
 shape = SubResource("BoxShape3D_72r61")
 metadata/back = ""
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=344071936]
+transform = Transform3D(20, 0, 0, 0, 18.649, 0, 0, 0, 24.792, 0, 0.953726, 3.5469894)
+mesh = SubResource("SphereMesh_8sxjr")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_txhr0")

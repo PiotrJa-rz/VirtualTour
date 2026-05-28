@@ -35,9 +35,12 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.7
 
 [node name="dawid" parent="." unique_id=1825903305 instance=ExtResource("6_dpq88")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8399786, -9.3406105)
+metadata/eksponat = ""
 
 [node name="eufrat" parent="." unique_id=1683390261 instance=ExtResource("6_dpq88")]
 transform = Transform3D(0.21060827, 0, 0.97757053, 0, 1, 0, -0.97757053, 0, 0.21060827, -2.6913087, 0.8251941, -6.76309)
+metadata/eksponat = ""
 
 [node name="astiages" parent="." unique_id=1064934503 instance=ExtResource("6_dpq88")]
 transform = Transform3D(-0.1377557, 0, 0.99046624, 0, 1, 0, -0.99046624, 0, -0.1377557, -2.6913087, 0.8251941, -2.0486462)
+metadata/eksponat = ""

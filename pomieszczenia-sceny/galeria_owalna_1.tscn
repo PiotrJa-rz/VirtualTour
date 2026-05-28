@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://54wf57mggr7t"]
 
-[ext_resource type="Script" path="res://node_3d.gd" id="1_sujno"]
+[ext_resource type="Script" uid="uid://dqcmn7002aq73" path="res://Node_3D.gd" id="1_sujno"]
 [ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_sujno"]
 [ext_resource type="Texture2D" uid="uid://c5o8n0ose8kik" path="res://zdjecia-360-z-podzialem/Galeria_Owalna/CAM_20260428120911_0002_D_CAME.JPG" id="2_v6il7"]
 [ext_resource type="PackedScene" uid="uid://boogrfo6lnpog" path="res://hotspot-nastepna-panorama.tscn" id="4_wndyp"]

@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://besffnb7tlgvt"]
+
+[ext_resource type="PackedScene" uid="uid://bd8w22ebv11a2" path="res://opis-sali-interfejs.tscn" id="1_h6obt"]
+[ext_resource type="Script" uid="uid://clxn6o2kalsrg" path="res://panel_opis_sali.gd" id="1_mcokw"]
+[ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_mcokw"]
+[ext_resource type="Texture2D" uid="uid://c5o8n0ose8kik" path="res://zdjecia-360-z-podzialem/Galeria_Owalna/CAM_20260428120911_0002_D_CAME.JPG" id="3_iuq86"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_rw1kt"]
+viewport_path = NodePath("Sprite3D/SubViewport")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kvvpw"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_vm104"]
+flip_faces = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hgm8r"]
+specular_mode = 1
+albedo_texture = ExtResource("3_iuq86")
+albedo_texture_force_srgb = true
+
+[node name="Node3D" type="Node3D" unique_id=1137175467]
+script = ExtResource("1_mcokw")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=948464168]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.274483e-05, 0.012574196, -0.006239891)
+texture = SubResource("ViewportTexture_rw1kt")
+
+[node name="SubViewport" type="SubViewport" parent="Sprite3D" unique_id=1810814718]
+size = Vector2i(800, 1000)
+
+[node name="Control" parent="Sprite3D/SubViewport" unique_id=1812620486 instance=ExtResource("1_h6obt")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -500.0
+offset_right = 400.0
+offset_bottom = 500.0
+
+[node name="XROrigin3D" parent="." unique_id=1211673775 instance=ExtResource("2_mcokw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5819645, 9.020715)
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1927148454]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4720669, 4.529084, 0)
+metadata/back = ""
+
+[node name="CollisionShape2D" type="CollisionShape3D" parent="Area3D" unique_id=818083295]
+shape = SubResource("BoxShape3D_kvvpw")
+metadata/back = ""
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1004730899]
+transform = Transform3D(20, 0, 0, 0, 18.649, 0, 0, 0, 24.792, 0, 0.953726, 3.5469894)
+mesh = SubResource("SphereMesh_vm104")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_hgm8r")

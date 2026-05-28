@@ -16,7 +16,14 @@ func _ready() -> void:
 	title.text = Global.galeria_owalna_hotspots[Global.current_hotspot]["title"]
 	description.text = Global.galeria_owalna_hotspots[Global.current_hotspot]["description"]
 	texture.texture = load(Global.galeria_owalna_hotspots[Global.current_hotspot]["url"])
-
+	var scene = load(Global.panoramas[Global.panorama_index])
+	var material = StandardMaterial3D.new()	
+	var scene_instante = scene.instantiate()
+	material.albedo_texture = scene_instante.get_node("MeshInstance3D").get_active_material(0).albedo_texture
+	var material2 = $MeshInstance3D.get_active_material(0)
+	material2.albedo_texture = scene_instante.get_node("MeshInstance3D").get_active_material(0).albedo_texture
+	print(material)
+	print(material2)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

@@ -26,6 +26,7 @@ skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_o31fp")
 
 [node name="XROrigin3D" parent="." unique_id=1211673775 instance=ExtResource("2_xh252")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.0811965)
 
 [node name="Area3D" parent="." unique_id=872797964 instance=ExtResource("3_6hf8a")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.8455439, 0, -2.9610457)
@@ -35,3 +36,16 @@ transform = Transform3D(0.4450416, 0, -0.8955099, 0, 1, 0, 0.8955099, 0, 0.44504
 
 [node name="tron" parent="." unique_id=1825903305 instance=ExtResource("5_qiv8e")]
 transform = Transform3D(0.5686767, 0, -0.82256114, 0, 1, 0, 0.82256114, 0, 0.5686767, 3.1958802, 0, -5.2687197)
+metadata/eksponat = ""
+
+[node name="kublicki" parent="." unique_id=1828955708 instance=ExtResource("5_qiv8e")]
+transform = Transform3D(0.97372216, 0, 0.22773911, 0, 1, 0, -0.22773911, 0, 0.97372216, 1.9538492, 0.78950065, -0.22884679)
+metadata/eksponat = ""
+
+[node name="kołątaj" parent="." unique_id=520703148 instance=ExtResource("5_qiv8e")]
+transform = Transform3D(0.97372216, 0, 0.22773911, 0, 1, 0, -0.22773911, 0, 0.97372216, -0.18231118, 0.78950065, 0.49596393)
+metadata/eksponat = ""
+
+[node name="zakrzewski" parent="." unique_id=684920637 instance=ExtResource("5_qiv8e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22831643, 0.84386635, -9.264092)
+metadata/eksponat = ""

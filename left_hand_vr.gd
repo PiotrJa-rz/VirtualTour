@@ -32,6 +32,9 @@ func _on_button_pressed(button_name):
 	elif button_name == "ax_button": 
 		Global.map = true
 		get_tree().change_scene_to_file.bind("res://panel_mapy.tscn").call_deferred()
+	elif button_name == "by_button":
+		get_tree().change_scene_to_file.bind("res://panel_opis_sali.tscn").call_deferred()
+		Global.opis_sali = true
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	button_pressed.connect(_on_button_pressed)
