@@ -1,9 +1,10 @@
-[gd_scene format=3 uid="uid://b8281hwpsgidf"]
+[gd_scene format=3 uid="uid://dyfj6ynue5el3"]
 
-[ext_resource type="Texture2D" uid="uid://dm81q72nti4dd" path="res://zdjecia-360-z-podzialem/sala_rady/CAM_20260504090437_0002_D_CAME.JPG" id="1_qbl77"]
+[ext_resource type="PackedScene" uid="uid://80ctavq7wsxk" path="res://hotspot_drzwi.tscn" id="1_5j6pb"]
 [ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_1gqy6"]
-[ext_resource type="PackedScene" uid="uid://bgbkg5ebenasg" path="res://hotspot_poprzednia_panorama.tscn" id="3_4y0v7"]
+[ext_resource type="Texture2D" uid="uid://b6q0uvjd3fmrm" path="res://zdjecia-360-z-podzialem/sala_rady/CAM_20260504090545_0004_D_CAME.JPG" id="2_xmwqt"]
 [ext_resource type="PackedScene" uid="uid://cehq7gdsyhubj" path="res://hotspot-krotki.tscn" id="4_5j6pb"]
+[ext_resource type="PackedScene" uid="uid://boogrfo6lnpog" path="res://hotspot-nastepna-panorama.tscn" id="5_xmwqt"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_mndi8"]
 flip_faces = true
@@ -11,26 +12,37 @@ flip_faces = true
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o31fp"]
 cull_mode = 2
 shading_mode = 0
-albedo_texture = ExtResource("1_qbl77")
+albedo_texture = ExtResource("2_xmwqt")
 
-[node name="Node3D" type="Node3D" unique_id=1687007021]
+[node name="Node3D" type="Node3D" unique_id=980864621]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1912674371]
-transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=441551902]
+transform = Transform3D(-8.067, 0, 0, 0, 7.522, -8.742278e-07, 0, 6.575941e-07, 10, 0, 0.953726, -4.4608)
 mesh = SubResource("SphereMesh_mndi8")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_o31fp")
 
 [node name="XROrigin3D" parent="." unique_id=1211673775 instance=ExtResource("2_1gqy6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.5227671)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.0811965)
 
-[node name="Area3D" parent="." unique_id=872797964 instance=ExtResource("3_4y0v7")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.8273895, 0, -3.6464078)
-
-[node name="czartoryski" parent="." unique_id=1825903305 instance=ExtResource("4_5j6pb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.36648694, 0.92067814, -9.047134)
+[node name="tron" parent="." unique_id=1825903305 instance=ExtResource("4_5j6pb")]
+transform = Transform3D(-0.15288234, 0, -0.9882444, 0, 1, 0, 0.9882444, 0, -0.15288234, -3.5082126, 0, -5.2687197)
 metadata/eksponat = ""
 
-[node name="małachowski" parent="." unique_id=821627524 instance=ExtResource("4_5j6pb")]
-transform = Transform3D(0.83654445, 0, -0.54789907, 0, 1, 0, 0.54789907, 0, 0.83654445, -2.486328, 0.80254245, -0.65576816)
+[node name="kublicki" parent="." unique_id=1828955708 instance=ExtResource("4_5j6pb")]
+transform = Transform3D(0.87106824, 0, -0.4911623, 0, 1, 0, 0.4911623, 0, 0.87106824, -2.0116265, 0.78950065, -0.20991969)
 metadata/eksponat = ""
+
+[node name="kołątaj" parent="." unique_id=520703148 instance=ExtResource("4_5j6pb")]
+transform = Transform3D(0.9572237, 0, -0.28934932, 0, 1, 0, 0.28934932, 0, 0.9572237, 0.22076452, 0.78950065, 0.49596393)
+metadata/eksponat = ""
+
+[node name="zakrzewski" parent="." unique_id=684920637 instance=ExtResource("4_5j6pb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24337181, 0.84386635, -9.264092)
+metadata/eksponat = ""
+
+[node name="Node3D3" parent="." unique_id=25008062 instance=ExtResource("1_5j6pb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3821996, 0.81319964, -0.3679347)
+
+[node name="Area3D" parent="." unique_id=1309105473 instance=ExtResource("5_xmwqt")]
+transform = Transform3D(0.0957589, 0, -0.99540454, 0, 1, 0, 0.99540454, 0, 0.0957589, 2.2707944, 0.81319964, -3.9258904)

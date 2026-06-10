@@ -47,7 +47,54 @@ Zasadniczą treścią, przedstawioną zarówno na plafonie, jak i w posągach i 
 		"description": "Sala Rycerska powstała według koncepcji samego króla Stanisława Augusta. Intencją monarchy było stworzenie w Zamku sali o charakterze panteonu narodowego. Chciał w niej uczczić osoby zasłużone dla ojczyzny, a także przypomnieć najważniejsze momenty z dziejów Polski. Ideę króla urzeczywistnili w latach 1781-86 jego architekci Dominik Merlini i Jan Christian Kamsetzer, malarz Marcello Bacciarelli oraz rzeźbiarze André Le Brun i Jakub Monaldi. Sześć okazałych płócien przedstawia sceny z dziejów Polski i Litwy, m.in. _Założenie_Uniwersytetu_Jagielońskiego_w_Krakowie_, _Unię_polsko-litewską_ i _Zwycięstwo_Jana_III_pod_Wiedniem_. Dziesięć owalnych portretów i dwadzieścia dwa brązowe popiersia przedstawiają wybranych przez króla sławnych Polaków: mężów stanu, wodzów, kapłanów i pisarzy. Wokół sali biegnie napis zaczerpnięty z VII księgi _Eneidy_ Wergiliusza, odnoszący się do zasług wybitnych obywateli.
 Uwagę zwracają ustawione w środkowej części sali posągi Sławy oraz Chronosa-Saturna. Sława głosi wieczną chwałę osób wyróżnionych przez króla, a Chronos-Saturn, symbolizujący przemijanie czasu i stale odradzające się życie, ma zapewnić, że cechy wybitnych mężów naszej historii odrodzą się w młodym pokoleniu rodaków. Stanisław August chciał uwidocznić prawdę, że siła i mądrość narodu, głęboka wiara i przestrzeganie zasad sprawiedliwości są zasługą zarówno monarchów, jak i pozostałych obywateli.
 Sala Narodowa, bo taką nazwę nosiła za Stanisława Augusta, służyła jako Przedpokój Senatorski. Miejsce przebywania najwyższych rangą gości króla: senatorów i ambasadorów. Salę odtworzono zgodnie z wyglądem, jaki miała przed zniszczeniem Zamku. Szczęśliwie uratowano wszystkie dzieła sztuki, które powróciły na swoje miejsce."
-	}
+	},
+	"marmurowy": {
+		"title": "Pokój Marmurowy",
+		"description": "Pokój Marmurowy służył jako drugi przedpokój w apartamencie państwowym i tutaj w
+czasie audiencji przebywali wyżsi rangą dworzanie. Jest to najstarsze wnętrze w tym
+apartamencie. Powstało jeszcze w czasach panowania króla Władysława IV w latach
+1640-42, według projektu Giovanniego Battisty Gisleniego. Pokój został później
+zaniedbany, a odnowił go Jakub Fontana w latach 1769-71. Fontana zachował ze
+starego wnętrza podstawowe elementy kompozycji architektonicznej oraz, bez
+większych zmian, dolną partię ścian poniżej belkowania i obramienia drzwi. Dodał
+natomiast 22 portrety królów polskich, plafon namalowany przez Marcella
+Bacciarellego oraz posągi Sprawiedliwości i Pokoju nad lustrem wykonane przez
+André Le Bruna. Pokój pomyślany był jako miejsce upamiętnienia monarchów
+zasiadających na tronie polskim. Król uwiecznił też twórców tego wnętrza: Fontanę,
+Bacciarellego i Le Bruna na tablicy pod konsolą. [p]Urządzone przez Fontanę
+wnętrze przetrwało do 1835 roku, kiedy to z rozkazu cara rozebrano marmurowe
+ściany. Podstawą obecnej rekonstrukcji jest pięć akwarel Jana Christiana
+Kamsetzera, które zarejestrowały wygląd pokoju z roku 1784. Na swoje miejsce
+szczęśliwie powróciły zachowane portrety królów polskich oraz rzeźby. Plafon
+odtworzony został ściśle według wspomnianych akwarel Kamsetzera przez
+współczesnych malarzy: Stefana Garwatowskiego i Jana Karczewskiego."
+	},
+	"przedpokoj":{
+		"title": "Przedpokój Sali Wielkiej",
+		"description": "Przedpokój Sali Wielkiej, zwany też Wielką Antyszambrą, służył jako pierwszy
+przedpokój, w którym w czasie audiencji gromadzili się niżsi rangą dworzanie. Jego
+wystrój architektoniczny powstał w czasie obecnej rekonstrukcji Zamku. Wiszą tu
+cztery obrazy zamówione w 1767 roku przez Stanisława Augusta właśnie do tej sali
+u francuskich malarzy: Jesepha Viena, Noëla Hallé oraz Louisa Legrenée.
+Przedstawiają sceny z historii starożytnej, podnosząc cnoty, jakimi charakteryzować
+się powinni dobrzy władcy.
+"
+	},"tronowa":{
+		"title": "Sala Tronowa",
+		"description": "Tu, na audiencjach, przyjmowani byli najważniejsi goście Stanisława Augusta —
+ambasadorowie i posłowie obcych monarchów oraz nuncjusz papieski. Dominujące
+w dekoracji kolory czerwieni i złota, a także liczne elementy wystroju symbolizują
+władzę królewską. Wnętrze projektował cały zespól nadwornych artystów z
+Domenikiem Merlinim na czele w latach 1783-1786. Ze stanisławowskiego wystroju i
+wyposażenia zachowały się drzwi, liczne fragmenty boazerii (rozpoznawalne po
+ciemniejszym kolorze złoceń) oraz wykonane w Rzymie i Paryżu kominki, rzeźby,
+meble i brązy. Oryginalny jest również fotel tronowy wykonany w Warszawie według
+projektu Johanna Christiana Kamsetzera. Srebrne haftowane orfy z zaplecka tronu,
+zerwane przez oficerów hitlerowskich w październiku 1939, zostały w całości
+zrekonstruowane. Pierwowzorem 86 kopii był jeden z orłów, odnaleziony w Stanach
+Zjednoczonych w 1991 roku.
+"
+		}
 }
 
 
@@ -161,6 +208,82 @@ var galeria_owalna_hotspots = {
 		"url": "res://wszystkie-zdjecia/Sala Rycerska/POI07.jpg",
 		"title": "Sława",
 		"description": "André Le Brun, 1783-86 r."
+	},
+	"poniatowski": {
+		"url": "res://wszystkie-zdjecia/POI – Pokój Marmurowy/POI – Pokój Marmurowy/S08-POI01.jpg",
+		"title": "Portret Stanisława Augusta Poniatowskiego w stroju koronacyjnym",
+		"description": "Marcello Bacciarelli, 1768–1771"
+	},
+	"tablica": {
+		"url": "res://wszystkie-zdjecia/POI – Pokój Marmurowy/POI – Pokój Marmurowy/S08-POI02.jpg",
+		"title": "Tablica upamiętniająca
+autorów wystroju
+pomieszczenia",
+		"description": "Z nazwiskami Jakuba Fontany, Marcella Bacciarellego i André Le Bruna"
+	},
+	"S09-POI01": {
+		"url": "res://wszystkie-zdjecia/POI – Przedpokój Sali Wielkiej/POI – Przedpokój Sali Wielkiej/S09-POI01.jpg",
+		"title": "Scilurus, król Scytów,
+nakazujący synom
+zgodę",
+	"description": "Noël Hallé, 1767 rok. Obraz symbolizujący Zgodę, na ramię inskrypcja:
+CONCORDES INVICTI (Zgodni niezwyciężeni)"
+	},
+	"S09-POI02": {
+		"url": "res://wszystkie-zdjecia/POI – Przedpokój Sali Wielkiej/POI – Przedpokój Sali Wielkiej/S09-POI02.jpg",
+		"title": "Żal Juliusza Cezara
+przed pomnikiem
+Aleksandra Wielkiego",
+		"description": "Joseph-Marie Vien, 1767 rok. Obraz symbolizujący Współzawodnictwo, na ramię
+inskrypcja: ALEXANDRI GLORIA EXCITAVIT CAESAREM (Sława Aleksandra
+poruszyła Cezara)"
+	},
+	"S09-POI03": {
+		"url": "res://wszystkie-zdjecia/POI – Przedpokój Sali Wielkiej/POI – Przedpokój Sali Wielkiej/S09-POI03.jpg",
+		"title": "Przerażenie Cezara na
+widok głowy
+Pompejusza
+",
+	"description": "Louis-François Lagrenée, 1767 rok. Obraz symbolizujący Wielkoduszność, na ramię
+inskrypcja: INIMICI NECEM TURPE PATRATAM EXHORRUIT CAESAR (Zabójstwo
+wroga popełnione haniebnie przeraziło Cezara)
+"
+	},
+	"S09-POI04": {
+		"url": "res://wszystkie-zdjecia/POI – Przedpokój Sali Wielkiej/POI – Przedpokój Sali Wielkiej/S09-POI04.jpg",
+		"title": "Wstrzemięźliwość
+Scypiona
+",
+	"description": "Joseph-Marie Vien, 1767 rok. Obraz symbolizujący Sprawiedliwość, na ramię
+inskrypcja: SUUM CUIQUE (Każdemu, co mu się należy)"
+	},
+	"S09-POI05": {
+		"url": "res://wszystkie-zdjecia/POI – Przedpokój Sali Wielkiej/POI – Przedpokój Sali Wielkiej/S09-POI05.jpg",
+		"title": "Waza ze sceną
+pochodu bogów
+greckich
+",
+	"description": "Francja(?), XVIII wiek. Depozyt Muzeum Narodowego w Warszawie 
+"
+	},
+	"S09-POI06": {
+		"url":"res://wszystkie-zdjecia/POI – Przedpokój Sali Wielkiej/POI – Przedpokój Sali Wielkiej/S09-POI06.jpg",
+		"title": "Satyr Odpoczywający",
+		"description": "Rzymska kopia rzeźby Praksytelesa, II wiek n.e."
+	},
+	"S06-POI01": {
+		"url": "res://wszystkie-zdjecia/POI – Sala Tronowa/POI – Sala Tronowa/S06-POI01.jpg",
+		"title": "Fotel tronowy",
+		"description": "Oryginalny fotel tronowy według projektu Johanna Cristiana Kamsetzera"
+	},
+	"S06-POI02": {
+		"url": "res://wszystkie-zdjecia/POI – Sala Tronowa/POI – Sala Tronowa/S06-POI02.jpg",
+		"title": "Gabinet Monarchów
+Europejskich
+",
+"description": "Paradny gabinet dedykowany europejskim władcom z czasów króla Stanisława
+Augusta
+"
 	}
 }
 

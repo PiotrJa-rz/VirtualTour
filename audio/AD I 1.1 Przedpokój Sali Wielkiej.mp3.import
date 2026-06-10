@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cxq5ohieu6urr"
+path="res://.godot/imported/AD I 1.1 Przedpokój Sali Wielkiej.mp3-35e91682e5c52f0dde747aabd14c7a57.mp3str"
+
+[deps]
+
+source_file="res://audio/AD I 1.1 Przedpokój Sali Wielkiej.mp3"
+dest_files=["res://.godot/imported/AD I 1.1 Przedpokój Sali Wielkiej.mp3-35e91682e5c52f0dde747aabd14c7a57.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

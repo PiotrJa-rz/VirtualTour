@@ -3,6 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://ch27fpmlbyr5d" path="res://zdjecia-360-z-podzialem/sala_tronowa_6/CAM_20260504092028_0010_D_CAME.JPG" id="1_sco5u"]
 [ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_8jofc"]
 [ext_resource type="PackedScene" uid="uid://80ctavq7wsxk" path="res://hotspot_drzwi.tscn" id="3_eeaps"]
+[ext_resource type="PackedScene" uid="uid://cehq7gdsyhubj" path="res://hotspot-krotki.tscn" id="4_sco5u"]
+[ext_resource type="PackedScene" uid="uid://boogrfo6lnpog" path="res://hotspot-nastepna-panorama.tscn" id="5_8jofc"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8jofc"]
 shading_mode = 0
@@ -19,7 +21,7 @@ albedo_texture = ExtResource("1_sco5u")
 [node name="Node3D" type="Node3D" unique_id=1905872592]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=68624609]
-transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
+transform = Transform3D(-8.067, 0, 0, 0, 7.522, -8.742278e-07, 0, 6.575941e-07, 10, 0, 0.953726, -4.4608)
 material_override = SubResource("StandardMaterial3D_8jofc")
 mesh = SubResource("SphereMesh_xrtju")
 skeleton = NodePath("")
@@ -29,4 +31,11 @@ surface_material_override/0 = SubResource("StandardMaterial3D_h2a4c")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
 
 [node name="Node3D" parent="." unique_id=1487015696 instance=ExtResource("3_eeaps")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.34869343, 0.5, -8.937)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41813296, 0.5, -8.937)
+
+[node name="S06-POI01" parent="." unique_id=1825903305 instance=ExtResource("4_sco5u")]
+transform = Transform3D(-0.09551561, 0, -0.9954279, 0, 1, 0, 0.9954279, 0, -0.09551561, -3.2312665, 0, -5.4299803)
+metadata/eksponat = ""
+
+[node name="Area3D" parent="." unique_id=1309105473 instance=ExtResource("5_8jofc")]
+transform = Transform3D(0.28896496, 0, 0.9573397, 0, 1, 0, -0.9573397, 0, 0.28896496, 1.2935965, 0, -4.223842)

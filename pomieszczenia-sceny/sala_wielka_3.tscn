@@ -1,9 +1,10 @@
-[gd_scene format=3 uid="uid://c863gfveq2bfv"]
+[gd_scene format=3 uid="uid://npeol6f7bpya"]
 
-[ext_resource type="Texture2D" uid="uid://bcva2ps4vm85o" path="res://zdjecia-360-z-podzialem/sala_wielka/CAM_20260504100721_0018_D_CAME.JPG" id="1_5yt3w"]
+[ext_resource type="Texture2D" uid="uid://co6882w3vjqxo" path="res://zdjecia-360-z-podzialem/sala_wielka/CAM_20260504100919_0020_D_CAME.JPG" id="1_jus8t"]
 [ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_4f6lw"]
 [ext_resource type="PackedScene" uid="uid://bgbkg5ebenasg" path="res://hotspot_poprzednia_panorama.tscn" id="3_qhogm"]
 [ext_resource type="PackedScene" uid="uid://80ctavq7wsxk" path="res://hotspot_drzwi.tscn" id="4_4f6lw"]
+[ext_resource type="PackedScene" uid="uid://cehq7gdsyhubj" path="res://hotspot-krotki.tscn" id="5_6ripe"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_mndi8"]
 flip_faces = true
@@ -11,12 +12,12 @@ flip_faces = true
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o31fp"]
 cull_mode = 2
 shading_mode = 0
-albedo_texture = ExtResource("1_5yt3w")
+albedo_texture = ExtResource("1_jus8t")
 
-[node name="Node3D" type="Node3D" unique_id=228788835]
+[node name="Node3D" type="Node3D" unique_id=509566362]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=967330621]
-transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1676636204]
+transform = Transform3D(-8.067, 0, 0, 0, 7.522, -8.742278e-07, 0, 6.575941e-07, 10, 0, 0.953726, -4.4608)
 mesh = SubResource("SphereMesh_mndi8")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_o31fp")
@@ -24,7 +25,15 @@ surface_material_override/0 = SubResource("StandardMaterial3D_o31fp")
 [node name="XROrigin3D" parent="." unique_id=1211673775 instance=ExtResource("2_4f6lw")]
 
 [node name="Area3D" parent="." unique_id=872797964 instance=ExtResource("3_qhogm")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.151, 0.5, -5.429)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.0818775)
 
 [node name="Node3D" parent="." unique_id=1487015696 instance=ExtResource("4_4f6lw")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.266, 0.5, -4.95126)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4005882, 0.618631, -9.079707)
+
+[node name="kandelabr" parent="." unique_id=1825903305 instance=ExtResource("5_6ripe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4763024, 0.61602294, -8.932544)
+metadata/eksponat = ""
+
+[node name="chaos" parent="." unique_id=1976774159 instance=ExtResource("5_6ripe")]
+transform = Transform3D(1, 0, 0, 0, 0.31132334, 0.95030403, 0, -0.95030403, 0.31132334, 0, 3.9779546, -3.0064256)
+metadata/eksponat = ""

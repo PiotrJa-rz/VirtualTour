@@ -17,17 +17,17 @@ albedo_texture = ExtResource("2_v6il7")
 script = ExtResource("1_sujno")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=894229159]
-transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
+transform = Transform3D(-8.067, 0, 0, 0, 7.522, -8.742278e-07, 0, 6.575941e-07, 10, 0, 0.953726, -4.4608)
 mesh = SubResource("SphereMesh_fq8v4")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_liamb")
 
 [node name="XROrigin3D" parent="." unique_id=1211673775 instance=ExtResource("2_sujno")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.237675)
 
 [node name="Area3D2" parent="." unique_id=1309105473 instance=ExtResource("4_wndyp")]
-transform = Transform3D(0.90515375, 0, 0.42508432, 0, 1, 0, -0.42508432, 0, 0.90515375, 0.26180053, 0, -1.2739782)
+transform = Transform3D(0.9527941, 0, -0.3036173, 0, 1, 0, 0.3036173, 0, 0.9527941, -0.9210956, 0, -1.2739782)
 
 [node name="gideon" parent="." unique_id=1825903305 instance=ExtResource("5_hbmip")]
-transform = Transform3D(0.9989363, 0, 0.046112746, 0, 1, 0, -0.046112746, 0, 0.9989363, -1.0239714, 0.84198713, -8.66446)
+transform = Transform3D(0.85500246, 0, -0.51862407, 0, 1, 0, 0.51862407, 0, 0.85500246, 1.008711, 0.84198713, -9.094161)
 metadata/eksponat = ""

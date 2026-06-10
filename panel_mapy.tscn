@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://g8fwvly8mnoo"]
 
-[ext_resource type="Texture2D" uid="uid://6tk0iq4ajgos" path="res://ui/svgviewer-png-output (1).png" id="1_7c8w4"]
 [ext_resource type="Script" uid="uid://d3txrbugnn3di" path="res://panel_mapy.gd" id="1_h6n1j"]
+[ext_resource type="Texture2D" uid="uid://b86phrqf7fsxn" path="res://ui/mapa-poprawiona.png" id="2_dbggl"]
 [ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_ec01n"]
 [ext_resource type="Script" uid="uid://bj44pc5abv86y" path="res://map_room.gd" id="4_dbggl"]
 
@@ -12,38 +12,38 @@ size = Vector3(0.59765625, 0.65478516, 0.27209854)
 script = ExtResource("1_h6n1j")
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=1807425]
-texture = ExtResource("1_7c8w4")
+texture = ExtResource("2_dbggl")
 
 [node name="XROrigin3D" parent="." unique_id=1211673775 instance=ExtResource("2_ec01n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12.828793)
 
-[node name="Galeria_owalna_1" type="Area3D" parent="." unique_id=1006350016]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9955125, -1.1656387, 0.8467772)
+[node name="Galeria_owalna_3" type="Area3D" parent="." unique_id=1006350016]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6234698, -1.1656387, 0.8467772)
 script = ExtResource("4_dbggl")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Galeria_owalna_1" unique_id=842237264]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Galeria_owalna_3" unique_id=842237264]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20117188, 0.17260742, -0.96982753)
 shape = SubResource("BoxShape3D_h6n1j")
 debug_color = Color(0.9425139, 0.12053495, 0.52275467, 0.41960785)
 
 [node name="Galeria_owalna_2" type="Area3D" parent="." unique_id=760697581]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7194123, -1.487345, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3109155, -1.487345, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Galeria_owalna_2" unique_id=1926068747]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.20465803, -0.061770916)
 shape = SubResource("BoxShape3D_h6n1j")
 debug_color = Color(0.9425139, 0.12053495, 0.52275467, 0.41960785)
 
-[node name="Galeria_owalna_3" type="Area3D" parent="." unique_id=959927363]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4497879, -1.487345, 0)
+[node name="Galeria_owalna_1" type="Area3D" parent="." unique_id=959927363]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.150866, -1.487345, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Galeria_owalna_3" unique_id=364483046]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Galeria_owalna_1" unique_id=364483046]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.10558045)
 shape = SubResource("BoxShape3D_h6n1j")
 debug_color = Color(0.9425139, 0.12053495, 0.52275467, 0.41960785)
 
 [node name="Sala_rady_1" type="Area3D" parent="." unique_id=1115958712]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.1328115, 0.2751938, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.584786, 0.2751938, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sala_rady_1" unique_id=1568429856]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.01612854)
@@ -51,7 +51,7 @@ shape = SubResource("BoxShape3D_h6n1j")
 debug_color = Color(0.9425139, 0.12053495, 0.52275467, 0.41960785)
 
 [node name="Sala_rady_2" type="Area3D" parent="." unique_id=1374913446]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4996827, 0.23670316, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.10821, 0.23670316, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sala_rady_2" unique_id=1962169345]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.091165066)
@@ -59,70 +59,70 @@ shape = SubResource("BoxShape3D_h6n1j")
 debug_color = Color(0.9425139, 0.12053495, 0.52275467, 0.41960785)
 
 [node name="Sala_wielka_1" type="Area3D" parent="." unique_id=1870663865]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0012375, 0.77814156, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8277352, 0.77814156, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sala_wielka_1" unique_id=172401534]
 shape = SubResource("BoxShape3D_h6n1j")
 debug_color = Color(0.9425139, 0.12053495, 0.52275467, 0.41960785)
 
 [node name="Sala_wielka_2" type="Area3D" parent="." unique_id=1636591000]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.117052555, 0.8426222, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.077120066, 0.8426222, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sala_wielka_2" unique_id=492255678]
 shape = SubResource("BoxShape3D_h6n1j")
 debug_color = Color(0.9425139, 0.12053495, 0.52275467, 0.41960785)
 
 [node name="Sala_wielka_3" type="Area3D" parent="." unique_id=696269042]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2027794, 0.7172111, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.98239815, 0.7172111, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sala_wielka_3" unique_id=6404448]
 shape = SubResource("BoxShape3D_h6n1j")
 debug_color = Color(0.9425139, 0.12053495, 0.52275467, 0.41960785)
 
 [node name="Sala_rycerska_1" type="Area3D" parent="." unique_id=1722282296]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5427513, 0.45372856, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2446833, 0.45372856, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sala_rycerska_1" unique_id=1094163045]
 shape = SubResource("BoxShape3D_h6n1j")
 debug_color = Color(0.9425139, 0.12053495, 0.52275467, 0.41960785)
 
 [node name="Sala_rycerska_2" type="Area3D" parent="." unique_id=2080808015]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1329575, 0.45372856, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5660572, 0.45372856, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sala_rycerska_2" unique_id=1187019005]
 shape = SubResource("BoxShape3D_h6n1j")
 debug_color = Color(0.9425139, 0.12053495, 0.52275467, 0.41960785)
 
 [node name="Sala_tronowa_1" type="Area3D" parent="." unique_id=1405777668]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7679377, 0.45372856, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0023003, 0.45372856, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sala_tronowa_1" unique_id=586378010]
 shape = SubResource("BoxShape3D_h6n1j")
 debug_color = Color(0.9425139, 0.12053495, 0.52275467, 0.41960785)
 
 [node name="Sala_tronowa_2" type="Area3D" parent="." unique_id=860545772]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7383313, 1.3345767, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.957187, 1.3345767, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sala_tronowa_2" unique_id=1787376242]
 shape = SubResource("BoxShape3D_h6n1j")
 debug_color = Color(0.9425139, 0.12053495, 0.52275467, 0.41960785)
 
 [node name="Pokoj_marmurowy_1" type="Area3D" parent="." unique_id=1890364666]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5427513, -1.1500031, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1903749, -1.1500031, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Pokoj_marmurowy_1" unique_id=2130026671]
 shape = SubResource("BoxShape3D_h6n1j")
 debug_color = Color(0.9425139, 0.12053495, 0.52275467, 0.41960785)
 
 [node name="Przedpokoj_sali_wielkiej_1" type="Area3D" parent="." unique_id=1516338897]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0986941, -2.2220988, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.87038016, -1.8246589, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Przedpokoj_sali_wielkiej_1" unique_id=576361355]
 shape = SubResource("BoxShape3D_h6n1j")
 debug_color = Color(0.9425139, 0.12053495, 0.52275467, 0.41960785)
 
 [node name="Przedpokoj_sali_wielkiej_2" type="Area3D" parent="." unique_id=1588330429]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.036062717, -1.9504503, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.036062717, -1.593861, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Przedpokoj_sali_wielkiej_2" unique_id=79537142]
 shape = SubResource("BoxShape3D_h6n1j")

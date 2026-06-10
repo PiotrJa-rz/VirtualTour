@@ -19,28 +19,28 @@ albedo_texture = ExtResource("2_0ycy4")
 script = ExtResource("1_10cxg")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1190714604]
-transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
+transform = Transform3D(-8.067, 0, 0, 0, 7.522, -8.742278e-07, 0, 6.575941e-07, 10, 0, 0.953726, -4.4608)
 mesh = SubResource("SphereMesh_mndi8")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_o31fp")
 
 [node name="XROrigin3D" parent="." unique_id=1211673775 instance=ExtResource("2_10cxg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.7840233)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.123637)
 
 [node name="hotspot-poprzednia-panorama" parent="." unique_id=872797964 instance=ExtResource("3_0ycy4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.6346462)
 
 [node name="Node3D" parent="." unique_id=1487015696 instance=ExtResource("5_0ycy4")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.7147808, 0.3389371, -4.421915)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.7231507, 0.3389371, -4.421915)
 
 [node name="dawid" parent="." unique_id=1825903305 instance=ExtResource("6_dpq88")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8399786, -9.3406105)
 metadata/eksponat = ""
 
 [node name="eufrat" parent="." unique_id=1683390261 instance=ExtResource("6_dpq88")]
-transform = Transform3D(0.21060827, 0, 0.97757053, 0, 1, 0, -0.97757053, 0, 0.21060827, -2.6913087, 0.8251941, -6.76309)
+transform = Transform3D(0.21060827, 0, 0.97757053, 0, 1, 0, -0.97757053, 0, 0.21060827, 2.9110515, 0.62983716, -7.0166388)
 metadata/eksponat = ""
 
 [node name="astiages" parent="." unique_id=1064934503 instance=ExtResource("6_dpq88")]
-transform = Transform3D(-0.1377557, 0, 0.99046624, 0, 1, 0, -0.99046624, 0, -0.1377557, -2.6913087, 0.8251941, -2.0486462)
+transform = Transform3D(-0.1377557, 0, 0.99046624, 0, 1, 0, -0.99046624, 0, -0.1377557, 3.2518291, 0.8251941, -1.9925461)
 metadata/eksponat = ""

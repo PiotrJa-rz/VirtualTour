@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_eooyd"]
 [ext_resource type="PackedScene" uid="uid://bgbkg5ebenasg" path="res://hotspot_poprzednia_panorama.tscn" id="3_jljbm"]
 [ext_resource type="PackedScene" uid="uid://boogrfo6lnpog" path="res://hotspot-nastepna-panorama.tscn" id="4_2aamp"]
+[ext_resource type="PackedScene" uid="uid://cehq7gdsyhubj" path="res://hotspot-krotki.tscn" id="5_eooyd"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_eooyd"]
 flip_faces = true
@@ -16,7 +17,7 @@ albedo_texture = ExtResource("1_eooyd")
 [node name="Node3D" type="Node3D" unique_id=1905017169]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=25789266]
-transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
+transform = Transform3D(-8.067, 0, 0, 0, 7.522, -8.742278e-07, 0, 6.575941e-07, 10, 0, 0.953726, -4.4608)
 mesh = SubResource("SphereMesh_eooyd")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_jljbm")
@@ -29,3 +30,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.124686, 0, -1.8357158)
 
 [node name="Area3D2" parent="." unique_id=1309105473 instance=ExtResource("4_2aamp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2400875, 0, -6)
+
+[node name="S06-POI02" parent="." unique_id=1825903305 instance=ExtResource("5_eooyd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29837263, 0, 0)
+metadata/eksponat = ""

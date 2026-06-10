@@ -1,26 +1,36 @@
-[gd_scene format=3 uid="uid://dwemejpyaw60k"]
+[gd_scene format=3 uid="uid://brxpj0557ddbn"]
 
-[ext_resource type="Texture2D" uid="uid://ipnimynjn0vf" path="res://zdjecia-360-z-podzialem/Przedpokoj_sali_wielkiej/CAM_20260428122918_0008_D_CAME.JPG" id="1_e43uu"]
-[ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_fims0"]
-[ext_resource type="PackedScene" uid="uid://boogrfo6lnpog" path="res://hotspot-nastepna-panorama.tscn" id="4_gfqy3"]
+[ext_resource type="Texture2D" uid="uid://c5myjd47vwq6u" path="res://zdjecia-360-z-podzialem/Przedpokoj_sali_wielkiej/CAM_20260428123034_0010_D_CAME.JPG" id="1_082yq"]
+[ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_ywshb"]
+[ext_resource type="PackedScene" uid="uid://bgbkg5ebenasg" path="res://hotspot_poprzednia_panorama.tscn" id="3_5lkb5"]
+[ext_resource type="PackedScene" uid="uid://cehq7gdsyhubj" path="res://hotspot-krotki.tscn" id="4_082yq"]
 
-[sub_resource type="SphereMesh" id="SphereMesh_fims0"]
+[sub_resource type="SphereMesh" id="SphereMesh_xrtju"]
+flip_faces = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fims0"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h2a4c"]
 cull_mode = 2
 shading_mode = 0
-albedo_texture = ExtResource("1_e43uu")
+albedo_texture = ExtResource("1_082yq")
 
-[node name="Node3D" type="Node3D" unique_id=1049732263]
+[node name="Node3D" type="Node3D" unique_id=1873959403]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1093682261]
-transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
-mesh = SubResource("SphereMesh_fims0")
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1390838787]
+transform = Transform3D(-8.067, 0, 0, 0, 7.522, -8.742278e-07, 0, 6.575941e-07, 10, 0, 0.953726, -4.4608)
+mesh = SubResource("SphereMesh_xrtju")
 skeleton = NodePath("")
-surface_material_override/0 = SubResource("StandardMaterial3D_fims0")
+surface_material_override/0 = SubResource("StandardMaterial3D_h2a4c")
 
-[node name="XROrigin3D" parent="." unique_id=1211673775 instance=ExtResource("2_fims0")]
+[node name="XROrigin3D" parent="." unique_id=1211673775 instance=ExtResource("2_ywshb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
 
-[node name="Area3D2" parent="." unique_id=1309105473 instance=ExtResource("4_gfqy3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.027189195, 0.5, -1.0567788)
+[node name="Area3D" parent="." unique_id=872797964 instance=ExtResource("3_5lkb5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.024, 0.5, -6.193)
+
+[node name="S09-POI03" parent="." unique_id=1825903305 instance=ExtResource("4_082yq")]
+transform = Transform3D(0.10024011, 0, -0.9949633, 0, 1, 0, 0.9949633, 0, 0.10024011, -3.6055436, 0.50287855, -4.885002)
+metadata/eksponat = ""
+
+[node name="S09-POI02" parent="." unique_id=623388351 instance=ExtResource("4_082yq")]
+transform = Transform3D(0.10024011, 0, -0.9949633, 0, 1, 0, 0.9949633, 0, 0.10024011, 3.4649413, 0.50287855, -5.852767)
+metadata/eksponat = ""

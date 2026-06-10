@@ -15,15 +15,24 @@ func _ready() -> void:
 	if Global.panorama_index < 3:
 		title.text = Global.opisy_sal["owalna"]["title"]
 		description.text = Global.opisy_sal["owalna"]["description"]
-	elif Global.panorama_index > 3 and Global.panorama_index < 5:
+	elif Global.panorama_index >= 3 and Global.panorama_index < 5:
 		title.text = Global.opisy_sal["rady"]["title"]
 		description.text = Global.opisy_sal["rady"]["description"]
-	elif Global.panorama_index > 5 and Global.panorama_index < 8:
+	elif Global.panorama_index >= 5 and Global.panorama_index < 8:
 		title.text = Global.opisy_sal["wielka"]["title"]
 		description.text = Global.opisy_sal["wielka"]["description"]
-	elif Global.panorama_index > 8 and Global.panorama_index < 11:
+	elif Global.panorama_index >= 8 and Global.panorama_index < 11:
 		title.text = Global.opisy_sal["rycerska"]["title"]
 		description.text = Global.opisy_sal["rycerska"]["description"]
+	elif Global.panorama_index >= 11 and Global.panorama_index < 13:
+		title.text = Global.opisy_sal["tronowa"]["title"]
+		description.text = Global.opisy_sal["tronowa"]["description"]
+	elif Global.panorama_index == 13:
+		title.text = Global.opisy_sal["marmurowy"]["title"]
+		description.text = Global.opisy_sal["marmurowy"]["description"]
+	elif Global.panorama_index > 13 and Global.panorama_index < 16:
+		title.text = Global.opisy_sal["przedpokoj"]["title"]
+		description.text = Global.opisy_sal["przedpokoj"]["description"]
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if ray2.is_colliding():

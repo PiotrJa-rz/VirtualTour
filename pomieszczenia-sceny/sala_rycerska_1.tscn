@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://d1nmxnps2solo"]
+[gd_scene format=3 uid="uid://b0l4s28gvxfqr"]
 
-[ext_resource type="Texture2D" uid="uid://ccvnuah6ti6wq" path="res://zdjecia-360-z-podzialem/sala_rycerska_5/CAM_20260504091718_0006_D_CAME.JPG" id="2_b47hb"]
+[ext_resource type="Texture2D" uid="uid://7qgurnd5rltu" path="res://zdjecia-360-z-podzialem/sala_rycerska_5/CAM_20260504091833_0008_D_CAME.JPG" id="2_b47hb"]
 [ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_fvdb1"]
 [ext_resource type="PackedScene" uid="uid://boogrfo6lnpog" path="res://hotspot-nastepna-panorama.tscn" id="4_gy0fu"]
 [ext_resource type="PackedScene" uid="uid://cehq7gdsyhubj" path="res://hotspot-krotki.tscn" id="5_b47hb"]
@@ -14,10 +14,13 @@ cull_mode = 2
 shading_mode = 0
 albedo_texture = ExtResource("2_b47hb")
 
-[node name="Node3D" type="Node3D" unique_id=1226350239]
+[node name="Node3D" type="Node3D" unique_id=1920418875]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1509641939]
-transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
+[node name="Node3D2" parent="." unique_id=1487015696 instance=ExtResource("5_fvdb1")]
+transform = Transform3D(-0.36487663, 0, -0.9310559, 0, 1, 0, 0.9310559, 0, -0.36487663, 2.368332, 0.6201949, -0.87103534)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1037754566]
+transform = Transform3D(-8.067, 0, 0, 0, 7.522, -8.742278e-07, 0, 6.575941e-07, 10, 0, 0.953726, -4.4608)
 mesh = SubResource("SphereMesh_xrtju")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_h2a4c")
@@ -26,19 +29,27 @@ surface_material_override/0 = SubResource("StandardMaterial3D_h2a4c")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
 
 [node name="Area3D2" parent="." unique_id=1309105473 instance=ExtResource("4_gy0fu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.012, 0.5, -1.469)
+transform = Transform3D(0.83009017, 0, -0.5576292, 0, 1, 0, 0.5576292, 0, 0.83009017, 1.5006509, 0, -7.301553)
 
-[node name="Node3D" parent="." unique_id=1487015696 instance=ExtResource("5_fvdb1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.795, 0.9492481, -9.207367)
+[node name="Node3D" parent="." unique_id=1775352796 instance=ExtResource("5_fvdb1")]
+transform = Transform3D(-0.5635261, 0, 0.82609826, 0, 1, 0, -0.82609826, 0, -0.5635261, -2.089, 0.5, -0.913)
 
-[node name="wieden" parent="." unique_id=1825903305 instance=ExtResource("5_b47hb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9989933, 0.6761466, -9.063618)
+[node name="hołd" parent="." unique_id=1825903305 instance=ExtResource("5_b47hb")]
+transform = Transform3D(0.027537853, 0, -0.99962074, 0, 1, 0, 0.99962074, 0, 0.027537853, 3.6584451, 0.44806975, -2.6915586)
 metadata/eksponat = ""
 
-[node name="chocim" parent="." unique_id=1507983098 instance=ExtResource("5_b47hb")]
-transform = Transform3D(0.28948292, 0, -0.9571832, 0, 1, 0, 0.9571832, 0, 0.28948292, -3.4824464, 0.6461567, -6.6048956)
+[node name="akademia" parent="." unique_id=1546363450 instance=ExtResource("5_b47hb")]
+transform = Transform3D(-0.6416236, 0, -0.76701957, 0, 1, 0, 0.76701957, 0, -0.6416236, 1.0249485, 0.51531434, 0.21658826)
 metadata/eksponat = ""
 
-[node name="unia" parent="." unique_id=596298348 instance=ExtResource("5_b47hb")]
-transform = Transform3D(0.250211, 0, -0.9681913, 0, 1, 0, 0.9681913, 0, 0.250211, -3.453536, 0.4429134, -2.0272756)
+[node name="kazimierz" parent="." unique_id=1805832331 instance=ExtResource("5_b47hb")]
+transform = Transform3D(0.73464227, 0, -0.6784546, 0, 1, 0, 0.6784546, 0, 0.73464227, -2.2782245, 0.44806975, -0.4536755)
+metadata/eksponat = ""
+
+[node name="chronos" parent="." unique_id=207326675 instance=ExtResource("5_b47hb")]
+transform = Transform3D(-0.0997366, 0, -0.99501383, 0, 1, 0, 0.99501383, 0, -0.0997366, 3.946827, 0.7068381, -4.8277845)
+metadata/eksponat = ""
+
+[node name="sława" parent="." unique_id=1634493302 instance=ExtResource("5_b47hb")]
+transform = Transform3D(0.940478, 0, 0.3398543, 0, 1, 0, -0.3398543, 0, 0.940478, -1.0290807, 0.6960251, -9.029567)
 metadata/eksponat = ""

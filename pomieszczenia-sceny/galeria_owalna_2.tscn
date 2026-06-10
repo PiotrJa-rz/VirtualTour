@@ -25,7 +25,7 @@ albedo_texture = SubResource("CompressedTexture2D_hogxq")
 script = ExtResource("1_i474n")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=22011384]
-transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
+transform = Transform3D(-8.067, 0, 0, 0, 7.522, -8.742278e-07, 0, 6.575941e-07, 10, 0, 0.953726, -4.4608)
 material_override = SubResource("StandardMaterial3D_4mww4")
 mesh = SubResource("SphereMesh_8t6f0")
 skeleton = NodePath("")
@@ -41,5 +41,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03715515, 0, -1.8357158)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0047421455, 0, -6)
 
 [node name="wielki" parent="." unique_id=1825903305 instance=ExtResource("6_rn3k5")]
-transform = Transform3D(0.07219383, 0, -0.9973908, 0, 1, 0, 0.9973908, 0, 0.07219383, -3.1163692, 0.33572757, -2.47716)
+transform = Transform3D(0.07219383, 0, -0.9973908, 0, 1, 0, 0.9973908, 0, 0.07219383, 2.3362806, 0.33572757, -2.47716)
 metadata/eksponat = ""

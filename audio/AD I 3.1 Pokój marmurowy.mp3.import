@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dojr4gjm5y7a3"
+path="res://.godot/imported/AD I 3.1 Pokój marmurowy.mp3-39649a6b31fe2a240bea5d8c7f229689.mp3str"
+
+[deps]
+
+source_file="res://audio/AD I 3.1 Pokój marmurowy.mp3"
+dest_files=["res://.godot/imported/AD I 3.1 Pokój marmurowy.mp3-39649a6b31fe2a240bea5d8c7f229689.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

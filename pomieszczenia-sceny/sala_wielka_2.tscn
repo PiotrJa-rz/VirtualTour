@@ -17,7 +17,7 @@ albedo_texture = ExtResource("1_it7o5")
 [node name="Node3D" type="Node3D" unique_id=238393412]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=399951659]
-transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
+transform = Transform3D(-8.067, 0, 0, 0, 7.522, -8.742278e-07, 0, 6.575941e-07, 10, 0, 0.953726, -4.4608)
 mesh = SubResource("SphereMesh_mndi8")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_o31fp")
@@ -25,11 +25,11 @@ surface_material_override/0 = SubResource("StandardMaterial3D_o31fp")
 [node name="XROrigin3D" parent="." unique_id=1211673775 instance=ExtResource("2_6j72h")]
 
 [node name="Area3D" parent="." unique_id=872797964 instance=ExtResource("3_k5gxe")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.0665774, 0.4499004, -5.6410284)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.0665774, 0.4499004, -3.7394981)
 
 [node name="Area3D2" parent="." unique_id=1309105473 instance=ExtResource("4_6j72h")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2.932, 0.5, -4.533)
 
 [node name="minerwa" parent="." unique_id=1825903305 instance=ExtResource("5_8tg74")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06749472, 0.74696976, 0.44923377)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14852428, 0.74696976, 0.44923377)
 metadata/eksponat = ""

@@ -1,9 +1,8 @@
-[gd_scene format=3 uid="uid://b0l4s28gvxfqr"]
+[gd_scene format=3 uid="uid://d1nmxnps2solo"]
 
-[ext_resource type="Texture2D" uid="uid://7qgurnd5rltu" path="res://zdjecia-360-z-podzialem/sala_rycerska_5/CAM_20260504091833_0008_D_CAME.JPG" id="1_ngk71"]
+[ext_resource type="Texture2D" uid="uid://ccvnuah6ti6wq" path="res://zdjecia-360-z-podzialem/sala_rycerska_5/CAM_20260504091718_0006_D_CAME.JPG" id="1_8mpqr"]
 [ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_8mpqr"]
 [ext_resource type="PackedScene" uid="uid://bgbkg5ebenasg" path="res://hotspot_poprzednia_panorama.tscn" id="3_bx8vw"]
-[ext_resource type="PackedScene" uid="uid://boogrfo6lnpog" path="res://hotspot-nastepna-panorama.tscn" id="4_36dhe"]
 [ext_resource type="PackedScene" uid="uid://80ctavq7wsxk" path="res://hotspot_drzwi.tscn" id="5_8mpqr"]
 [ext_resource type="PackedScene" uid="uid://cehq7gdsyhubj" path="res://hotspot-krotki.tscn" id="6_bx8vw"]
 
@@ -13,15 +12,12 @@ flip_faces = true
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h2a4c"]
 cull_mode = 2
 shading_mode = 0
-albedo_texture = ExtResource("1_ngk71")
+albedo_texture = ExtResource("1_8mpqr")
 
-[node name="Node3D" type="Node3D" unique_id=1920418875]
+[node name="Node3D" type="Node3D" unique_id=1226350239]
 
-[node name="Node3D2" parent="." unique_id=1487015696 instance=ExtResource("5_8mpqr")]
-transform = Transform3D(-0.36487663, 0, -0.9310559, 0, 1, 0, 0.9310559, 0, -0.36487663, 3.213321, 0.6201949, -1.9030552)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1037754566]
-transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1509641939]
+transform = Transform3D(-8.067, 0, 0, 0, 7.522, -8.742278e-07, 0, 6.575941e-07, 10, 0, 0.953726, -4.4608)
 mesh = SubResource("SphereMesh_xrtju")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_h2a4c")
@@ -29,31 +25,19 @@ surface_material_override/0 = SubResource("StandardMaterial3D_h2a4c")
 [node name="XROrigin3D" parent="." unique_id=1211673775 instance=ExtResource("2_8mpqr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
 
+[node name="Node3D" parent="." unique_id=1487015696 instance=ExtResource("5_8mpqr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.78103894, 0.6548021, -9.207367)
+
+[node name="wieden" parent="." unique_id=1825903305 instance=ExtResource("6_bx8vw")]
+transform = Transform3D(0.95572114, 0, -0.29427385, 0, 1, 0, 0.29427385, 0, 0.95572114, 0.9609815, 0.47903, -9.063618)
+metadata/eksponat = ""
+
+[node name="chocim" parent="." unique_id=1507983098 instance=ExtResource("6_bx8vw")]
+transform = Transform3D(-0.204496, 0, -0.9788674, 0, 1, 0, 0.9788674, 0, -0.204496, 3.4205644, 0.5531896, -6.6048956)
+metadata/eksponat = ""
+
+[node name="unia" parent="." unique_id=596298348 instance=ExtResource("6_bx8vw")]
+transform = Transform3D(0.250211, 0, -0.9681913, 0, 1, 0, 0.9681913, 0, 0.250211, 3.428968, 0.4429134, -2.0272756)
+metadata/eksponat = ""
+
 [node name="Area3D" parent="." unique_id=872797964 instance=ExtResource("3_bx8vw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.356, 0.5, -8.89976)
-
-[node name="Area3D2" parent="." unique_id=1309105473 instance=ExtResource("4_36dhe")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2400875, 0, -6)
-
-[node name="Node3D" parent="." unique_id=1775352796 instance=ExtResource("5_8mpqr")]
-transform = Transform3D(-0.5635261, 0, 0.82609826, 0, 1, 0, -0.82609826, 0, -0.5635261, -2.089, 0.5, -0.913)
-
-[node name="hołd" parent="." unique_id=1825903305 instance=ExtResource("6_bx8vw")]
-transform = Transform3D(0.54810345, 0, -0.8364105, 0, 1, 0, 0.8364105, 0, 0.54810345, -3.6719525, 0.44806975, -2.6915586)
-metadata/eksponat = ""
-
-[node name="akademia" parent="." unique_id=1546363450 instance=ExtResource("6_bx8vw")]
-transform = Transform3D(0.54810345, 0, -0.8364105, 0, 1, 0, 0.8364105, 0, 0.54810345, -1.0015955, 0.51531434, 0.23985696)
-metadata/eksponat = ""
-
-[node name="kazimierz" parent="." unique_id=1805832331 instance=ExtResource("6_bx8vw")]
-transform = Transform3D(-0.6853736, 0, -0.72819155, 0, 1, 0, 0.72819155, 0, -0.6853736, 2.2397242, 0.44806975, -0.4536755)
-metadata/eksponat = ""
-
-[node name="chronos" parent="." unique_id=207326675 instance=ExtResource("6_bx8vw")]
-transform = Transform3D(0.54810345, 0, -0.8364105, 0, 1, 0, 0.8364105, 0, 0.54810345, -3.9138312, 0.7068381, -4.8277845)
-metadata/eksponat = ""
-
-[node name="sława" parent="." unique_id=1634493302 instance=ExtResource("6_bx8vw")]
-transform = Transform3D(0.54810345, 0, -0.8364105, 0, 1, 0, 0.8364105, 0, 0.54810345, 0.96937037, 0.6960251, -9.201665)
-metadata/eksponat = ""

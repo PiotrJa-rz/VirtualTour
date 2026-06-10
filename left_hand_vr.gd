@@ -4,8 +4,9 @@ extends XRController3D
 @onready var controls = $"../Camera3D/Node3D"
 @onready var ray: RayCast3D = $"RayCast3D"
 
-
+@onready var audio_stream: AudioStreamPlayer3D = get_node("/root/Odtwarzacz/AudioStreamPlayer3D")
 func _on_button_pressed(button_name):
+	audio_stream.stream = preload("res://audio/AD I 1 Wstęp_0.mp3")
 	if button_name =="trigger_click" and Global.map:
 		Global.button_pressed_on_map = true
 		if ray.is_colliding():
@@ -35,6 +36,7 @@ func _on_button_pressed(button_name):
 	elif button_name == "by_button":
 		get_tree().change_scene_to_file.bind("res://panel_opis_sali.tscn").call_deferred()
 		Global.opis_sali = true
+		
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	button_pressed.connect(_on_button_pressed)

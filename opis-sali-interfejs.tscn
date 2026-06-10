@@ -75,7 +75,8 @@ vertical_alignment = 1
 custom_minimum_size = Vector2(0, 125)
 layout_mode = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-text = "Rzęźba przedstawia znanego na całym świecie Marka Aureliusza, który kochał co robił i był dla wielu inspiracją"
+text = "Lorem Ipsum dolor sit amet"
+fit_content = true
 horizontal_alignment = 1
 
 [node name="Panel" type="Panel" parent="." unique_id=1074484931]

@@ -3,17 +3,19 @@
 [ext_resource type="Texture2D" uid="uid://glwuiqxx2bl4" path="res://zdjecia-360-z-podzialem/pokoj_marmurowy/CAM_20260504092949_0014_D_CAME.JPG" id="1_ovxej"]
 [ext_resource type="PackedScene" uid="uid://fve1e33k2te0" path="res://zestaw_vr.tscn" id="2_ovxej"]
 [ext_resource type="PackedScene" uid="uid://80ctavq7wsxk" path="res://hotspot_drzwi.tscn" id="3_31d7b"]
+[ext_resource type="PackedScene" uid="uid://cehq7gdsyhubj" path="res://hotspot-krotki.tscn" id="4_avdmc"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_xrtju"]
 flip_faces = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lymp6"]
+shading_mode = 0
 albedo_texture = ExtResource("1_ovxej")
 
 [node name="Node3D" type="Node3D" unique_id=1654902287]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=104018317]
-transform = Transform3D(8.067, 0, 0, 0, 7.522, 0, 0, 0, 10, 0, 0.953726, -4.4608)
+transform = Transform3D(-8, 0, 0, 0, 7.456, -8.6723395e-07, 0, 6.518242e-07, 9.92, 0, 0.953726, -4.4608)
 mesh = SubResource("SphereMesh_xrtju")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_lymp6")
@@ -22,7 +24,15 @@ surface_material_override/0 = SubResource("StandardMaterial3D_lymp6")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
 
 [node name="Node3D" parent="." unique_id=1487015696 instance=ExtResource("3_31d7b")]
-transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, 2.211, 0.5, -1.535)
+transform = Transform3D(0.58702254, 0, -0.80957055, 0, 1, 0, 0.80957055, 0, 0.58702254, -2.469596, 0.42856252, -1.1387466)
 
 [node name="Node3D2" parent="." unique_id=967670517 instance=ExtResource("3_31d7b")]
-transform = Transform3D(-0.7547096, 0, 0.6560589, 0, 1, 0, -0.6560589, 0, -0.7547096, 1.3350599, 0.5, -8.808972)
+transform = Transform3D(-0.6802348, 0, -0.73299414, 0, 1, 0, 0.73299414, 0, -0.6802348, -1.5692832, 0.64066976, -8.898078)
+
+[node name="poniatowski" parent="." unique_id=1825903305 instance=ExtResource("4_avdmc")]
+transform = Transform3D(0.9104529, 0, 0.41361296, 0, 1, 0, -0.41361296, 0, 0.9104529, 3.0411992, 0.79923207, -2.0177927)
+metadata/eksponat = ""
+
+[node name="tablica" parent="." unique_id=676485822 instance=ExtResource("4_avdmc")]
+transform = Transform3D(0.49298552, 0, 0.8700375, 0, 1, 0, -0.8700375, 0, 0.49298552, -2.6248736, 0, -7.646919)
+metadata/eksponat = ""

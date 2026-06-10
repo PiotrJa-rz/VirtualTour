@@ -21,6 +21,7 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 [autoload]
 
 Global="*uid://dgiq5wit4u3fj"
+Odtwarzacz="*uid://2xwgtotues2b"
 
 [filesystem]
 
